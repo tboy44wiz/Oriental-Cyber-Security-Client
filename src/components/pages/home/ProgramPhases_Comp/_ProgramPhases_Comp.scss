@@ -1,0 +1,45 @@
+@import "src/assets/styles/GlobalStyle";
+
+.ProgramPhases_Comp {
+  height: $fullHeight;
+  width: $fullWidth;
+  overflow: hidden;
+  padding: 20px 0 100px 0;
+  position: relative;
+
+  /*.background__image {
+    height: $fullHeight;
+    width: $fullWidth;
+    object-fit: cover;
+  };*/
+
+  .overlay {
+    height: $fullHeight;
+    width: $fullWidth;
+    background: linear-gradient(90deg, rgba(0, 65, 65, 0.7), rgba(0, 65, 65, 0.7)), url("../../../../assets/images/bg_tablet.jpg") no-repeat center;
+    background-size: cover;
+    //background: rgba(70, 70, 70, 0.6);
+
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  };
+
+  .phase__wrapper {
+    height: $fullHeight;
+    width: $fullWidth;
+    color: $colorWhite;
+    position: relative;
+    z-index: 10;
+
+    .phase__image {
+      height: auto;
+      width: 60%;
+    };
+    .phase__text {
+      font-weight: 500;
+      text-align: justify;
+    };
+  };
+
+};

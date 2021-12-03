@@ -1,0 +1,42 @@
+@import "src/assets/styles/GlobalStyle";
+
+.AppFooter_Comp {
+  //background: #3f3f3f;
+  background: $primaryColor;
+  color: $secondaryColor;
+  font-size: 1.1rem;
+  padding: 40px 0 0 0;
+
+  .brand__name {
+    font-family: 'Jost', sans-serif;
+    font-size: $heading;
+  }
+
+  a {
+    color: $colorWhite;
+    text-decoration: none;
+
+    &:hover {
+      color: $linkColorHover;
+    };
+  };
+
+  .top-footer__wrapper {
+    padding: 40px 0 60px 0;
+
+    .footer__subHeader {
+      font-size: $subHeading;
+    };
+  };
+
+  .bottom-footer__wrapper {
+    background: #002525;
+    padding: 20px 0;
+
+    .social-icon__wrapper {
+      a {
+        margin-right: 15px;
+      };
+    };
+  };
+}

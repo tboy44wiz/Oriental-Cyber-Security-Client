@@ -1,0 +1,30 @@
+/*====  Global Variables ====*/
+
+//  Layout
+$deviceHeight: 100vh;
+$deviceWidth: 100vw;
+$fullHeight: 100%;
+$fullWidth: 100%;
+
+//  Font Size
+$heading: 2rem;
+$subHeading: 1.6rem;
+$fontSize: 1.2rem;
+
+//  Colors
+$primaryColor: #004141;
+$secondaryColor: #f6f6f8;
+$colorWhite: #ffffff;
+$tertiaryColor: #efefef;
+$linkColorHover: #9d9d9d;
+
+//  Mixins
+@mixin flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /*==== To use the Mixin ====*/
+  // @include flex_center;
+};
+

@@ -1,0 +1,19 @@
+@import "src/assets/styles/GlobalStyle";
+
+.SectionTitle_Comp {
+  height: auto;
+  width: $fullWidth;
+  margin-top: 20px;
+  padding: 50px 0;
+
+  .section__title {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+  };
+
+  .section__subTitle {
+    text-align: center;
+  };
+};

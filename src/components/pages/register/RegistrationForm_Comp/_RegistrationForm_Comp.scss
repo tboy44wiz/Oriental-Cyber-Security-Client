@@ -1,0 +1,67 @@
+@import "src/assets/styles/GlobalStyle";
+
+.RegistrationForm_Comp {
+  //padding: 0 80px;
+
+  .registration__form {
+    box-shadow: 0 6px 12px 0 rgba(204, 204, 204, 0.6);
+    padding: 50px 20px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+    grid-gap: 20px;
+
+    .input__box {
+      height: auto;
+      width: 100%;
+      background: $tertiaryColor;
+      border: none;
+      line-height: 40px;
+      outline: none;
+      padding: 5px 15px;
+
+      &:focus {
+        outline: none;
+      };
+    };
+
+    .select__box {
+      height: auto;
+      width: 100%;
+      background: $tertiaryColor;
+      border: none;
+      cursor: pointer;
+      line-height: 40px;
+      outline: none;
+      padding: 5px 10px;
+
+      .first__option {
+        color: red;
+      };
+    };
+
+    .register__button {
+      height: auto;
+      width: $fullWidth;
+      margin-top: 20px;
+      background: $primaryColor;
+      border: 1px solid $linkColorHover;
+      border-radius: 3px;
+      color: $colorWhite;
+      font-weight: 500;
+      padding: 12px 0;
+      text-transform: uppercase;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background: transparent;
+        border: 1px solid $linkColorHover;
+        color: $primaryColor;
+      };
+    };
+
+    .full-name__input, .institution__input, .register__button {
+      grid-column: 1 / -1;
+    };
+  };
+};

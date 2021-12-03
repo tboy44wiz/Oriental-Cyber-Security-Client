@@ -1,0 +1,47 @@
+@import "src/assets/styles/GlobalStyle";
+
+.RegistrationSteps_Comp {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+
+  .phase-one-reg__wrapper {
+    border-right: 1px solid $linkColorHover;
+    padding: 10px 10px 20px 0;
+
+    .phase-one__title {
+      margin-bottom: 20px;
+      border-bottom: 3px solid $primaryColor;
+      display: inline-block;
+    };
+  };
+
+  .phase-two-reg__wrapper {
+    padding: 10px 0 20px 0;
+
+    .phase-two__title {
+      margin-bottom: 20px;
+      border-bottom: 3px solid $primaryColor;
+      display: inline-block;
+    };
+
+    .register__button {
+      height: auto;
+      width: $fullWidth;
+      background: $primaryColor;
+      border: 1px solid $linkColorHover;
+      border-radius: 3px;
+      color: $colorWhite;
+      font-weight: 500;
+      padding: 12px 0;
+      text-transform: uppercase;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background: transparent;
+        border: 1px solid $linkColorHover;
+        color: $primaryColor;
+      };
+    };
+  };
+};
