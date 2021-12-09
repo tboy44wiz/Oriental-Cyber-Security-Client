@@ -1,14 +1,198 @@
+@import "src/assets/styles/GlobalStyle";
+
 .WhoWeAre_Comp {
   padding-bottom: 60px;
 
-  .information-security-training__image {
+  .who-we-are__wrapper {
     height: auto;
-    min-width: 100%;
-  }
+    width: $fullWidth;
 
-  /*====  Who we are image and description  ====*/
-  .who-we-are__text {
-    margin-left: 20px;
-    text-align: justify;
+    display: grid;
+    grid-template-columns: [leftAside-start] 40% [leftAside-end rightAside-start] 60% [rightAside-end];
+    grid-template-rows: [whoWeAreRowOne-start] min-content [whoWeAreRowOne-end whoWeAreRowTwo-start] min-content [whoWeAreRowTwo-end whoWeAreRowThree-start] min-content [whoWeAreRowThree-end whoWeAreRowFour-start] min-content [whoWeAreRowFour-end];
+    align-items: center;
+    //grid-column-gap: 2rem;
+    //overflow: auto;
+
+    .security-training__image-and-proceed__button {
+      grid-column: leftAside-start / leftAside-end;
+      grid-row: whoWeAreRowOne-start / whoWeAreRowTwo-end;
+      align-self: center;
+
+      height: auto;
+      width: $fullWidth;
+
+      .information-security-training__image {
+        height: auto;
+        min-width: 100%;
+      }
+
+      .proceed__button {
+        height: auto;
+        width: $fullWidth;
+        background: $primaryColor;
+        border: 1px solid $linkColorHover;
+        border-radius: 3px;
+        color: $colorWhite;
+        font-weight: 500;
+        padding: 12px 0;
+        text-transform: uppercase;
+        transition: all 0.2s ease;
+
+        &:hover {
+          background: transparent;
+          border: 1px solid $linkColorHover;
+          color: $primaryColor;
+        };
+      };
+    };
+
+    .who-we-are__text {
+      text-align: justify;
+    };
+    .paragraph-one {
+      grid-column: rightAside-start / rightAside-end;
+      grid-row: whoWeAreRowOne-start / whoWeAreRowOne-end;
+      margin-left: 2rem;
+    };
+    .paragraph-two {
+      grid-column: rightAside-start / rightAside-end;
+      grid-row: whoWeAreRowTwo-start / whoWeAreRowTwo-end;
+      margin-left: 2rem;
+    };
+    .paragraph-three {
+      grid-column: leftAside-start / rightAside-end;
+      grid-row: whoWeAreRowThree-start / whoWeAreRowThree-end;
+    };
+
+
   };
 };
+
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+  .WhoWeAre_Comp {
+    padding-bottom: 60px;
+
+    .who-we-are__wrapper {
+      .security-training__image-and-proceed__button {
+        grid-column: leftAside-start / leftAside-end;
+        grid-row: whoWeAreRowOne-start / whoWeAreRowOne-end;
+
+        height: auto;
+        width: $fullWidth;
+
+        .information-security-training__image {
+          height: auto;
+          min-width: 100%;
+        }
+
+        .proceed__button {
+          height: auto;
+          width: $fullWidth;
+          background: $primaryColor;
+          border: 1px solid $linkColorHover;
+          border-radius: 3px;
+          color: $colorWhite;
+          font-size: 1rem;
+          font-weight: 500;
+          padding: 12px 0;
+          text-transform: uppercase;
+          transition: all 0.2s ease;
+
+          &:hover {
+            background: transparent;
+            border: 1px solid $linkColorHover;
+            color: $primaryColor;
+          }
+        ;
+        };
+      };
+
+      .paragraph-one {
+        grid-column: rightAside-start / rightAside-end;
+        grid-row: whoWeAreRowOne-start / whoWeAreRowOne-end;
+      };
+
+      .paragraph-two {
+        grid-column: leftAside-start / rightAside-end;
+        grid-row: whoWeAreRowTwo-start / whoWeAreRowTwo-end;
+        margin-left: 0;
+      };
+
+      .paragraph-three {
+        grid-column: leftAside-start / rightAside-end;
+        grid-row: whoWeAreRowFour-start / whoWeAreRowFour-end;
+      };
+
+
+    };
+  };
+}
+
+@media screen and (max-width: 767px) {
+  .WhoWeAre_Comp {
+    padding-bottom: 60px;
+
+    .who-we-are__wrapper {
+      .security-training__image-and-proceed__button {
+        grid-column: leftAside-start / rightAside-end;
+        grid-row: whoWeAreRowOne-start / whoWeAreRowOne-end;
+
+        height: auto;
+        width: $fullWidth;
+
+        .information-security-training__image {
+          height: auto;
+          min-width: 100%;
+        }
+
+        .proceed__button {
+          height: auto;
+          width: $fullWidth;
+          background: $primaryColor;
+          border: 1px solid $linkColorHover;
+          border-radius: 3px;
+          color: $colorWhite;
+          font-size: $fontSize;
+          font-weight: 500;
+          padding: 12px 0;
+          text-transform: uppercase;
+          transition: all 0.2s ease;
+
+          &:hover {
+            background: transparent;
+            border: 1px solid $linkColorHover;
+            color: $primaryColor;
+          }
+        ;
+        };
+      };
+
+      .paragraph-one {
+        grid-column: leftAside-start / rightAside-end;
+        grid-row: whoWeAreRowTwo-start / whoWeAreRowTwo-end;
+        margin-left: 0;
+        margin-top: 40px;
+      };
+
+      .paragraph-two {
+        grid-column: leftAside-start / rightAside-end;
+        grid-row: whoWeAreRowThree-start / whoWeAreRowThree-end;
+        margin-left: 0;
+      };
+
+      .paragraph-three {
+        grid-column: leftAside-start / rightAside-end;
+        grid-row: whoWeAreRowFour-start / whoWeAreRowFour-end;
+      };
+
+
+    };
+  };
+}

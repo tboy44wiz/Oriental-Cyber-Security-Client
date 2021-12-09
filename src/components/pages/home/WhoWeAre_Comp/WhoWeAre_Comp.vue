@@ -4,35 +4,40 @@
     <section class="container">
       <SectionTitle_Comp :title="title" :subTitle="subTitle" />
 
-      <div class="row d-flex align-items-center">
-        <div class="col-md-5">
+      <div class="who-we-are__wrapper">
+
+        <!--  Left Aside  -->
+        <div class="security-training__image-and-proceed__button">
           <img :src="whoWeAreImage" class="img-fluid information-security-training__image" alt="Information_security_training_image" />
+
+          <router-link to="/register">
+            <button class="proceed__button mt-2 mt-md-4">Proceed To Registration</button>
+          </router-link>
         </div>
 
-        <div class="col-md-7">
-          <p class="who-we-are__text">
-            Oriental CyberSecurity Training and Initiative Programme is a program established and organized by a team of
-            Nigerian Cyber Security experts based in Nigeria, Canada and Europe to deliver a first-hand training and
-            mentorship programme on Information/Cyber security to all interested Nigerians who are ready to make a
-            career in Cyber Security.
-          </p>
+        <!--  Left Aside  -->
+        <p class="who-we-are__text paragraph-one">
+          Oriental CyberSecurity Training and Initiative Programme is a program established and organized by a team of
+          Nigerian Cyber Security experts based in Nigeria, Canada and Europe to deliver a first-hand training and
+          mentorship programme on Information/Cyber security to all interested Nigerians who are ready to make a
+          career in Cyber Security.
+        </p>
 
-          <p class="who-we-are__text">
-            The core benefit is for the participants to acquire skills and to build professional networks that would
-            them grow and build career in the field. At the completion of this programme, participants will get a
-            certificate for the programme and would also be able to sit for any Cyber Security examinations of their
-            choice.
-          </p>
+        <p class="who-we-are__text paragraph-two">
+          The core benefit is for the participants to acquire skills and to build professional networks that would
+          them grow and build career in the field. At the completion of this programme, participants will get a
+          certificate for the programme and would also be able to sit for any Cyber Security examinations of their
+          choice.
+        </p>
 
-          <p class="who-we-are__text">
-            Our target candidates includes <strong>Serving NYSC members</strong>,
-            <strong>Recent graduates, as well as Third and Final year student of Nigeria Universities and Polytechnics.</strong>,
-            Preference will be given to Computer / Physical Science and Engineering.
-            The programme will consists of <strong>Physical</strong> and <strong>Remote Meetings.</strong>
-            The physical venue is at ForeTrust Digital Center Enugu on the scheduled days while those that are for remote
-            will join via Zoom.
-          </p>
-        </div>
+        <p class="who-we-are__text paragraph-three mt-0 mt-md-2 mt-lg-4">
+          Our target candidates includes <strong>Serving NYSC members</strong>,
+          <strong>Recent graduates, as well as Third and Final year student of Nigeria Universities and Polytechnics.</strong>,
+          Preference will be given to Computer / Physical Science and Engineering.
+          The programme will consists of <strong>Physical</strong> and <strong>Remote Meetings.</strong>
+          The physical venue is at ForeTrust Digital Center Enugu on the scheduled days while those that are for remote
+          will join via Zoom.
+        </p>
       </div>
     </section>
   </div>
@@ -44,8 +49,6 @@
 
   //  Import Assets.
   import whoWeAreImage from '@/assets/images/information_security_training.png';
-  import phaseOneImage from '@/assets/images/phase_1.png';
-  import phaseTwoImage from '@/assets/images/phase_2.png';
 
   export default defineComponent({
     name: 'WhoWeAre_Comp',
@@ -58,11 +61,7 @@
       return {
         title: "Who We Are",
         subTitle: "Learn to know whom we are and what we do.",
-        phaseTitle: "Program Phases",
-        phaseSubTitle: "This program is divided into two main phases and these phases are clearly explained as follows:",
         whoWeAreImage,
-        phaseOneImage,
-        phaseTwoImage
       };
     },
 

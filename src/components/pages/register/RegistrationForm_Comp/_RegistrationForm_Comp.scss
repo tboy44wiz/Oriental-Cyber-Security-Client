@@ -65,3 +65,18 @@
     };
   };
 };
+
+
+
+
+/*==== Media Query ====*/
+@media screen and (max-width: 680px) {
+  .RegistrationForm_Comp {
+    .registration__form {
+
+      .phone-number__input, .email__input, .state__input, .select__box, .course__input, .level__input {
+        grid-column: 1 / -1;
+      };
+    };
+  };
+}

@@ -19,7 +19,7 @@
               <p>To register, use the button below:</p>
 
               <router-link to="/register">
-                <button class="register__button">Register Here</button>
+                <button class="proceed__button">Proceed To Registration</button>
               </router-link>
             </div>
           </div>

@@ -48,14 +48,14 @@
         <div class="container">
           <div class="row">
 
-            <div class="col-md-5">
+            <div class="col-7">
               <div class="footer-copyright">
                 &copy; Copyright
                 <a :href="foreTrustLink" target="_blank">ForeTrust Digital</a> {{ year }}
               </div>
             </div>
 
-            <div class="col-md-7 text-end">
+            <div class="col-5 text-end">
               <div class="social-icon__wrapper">
                 <router-link to="#">
                   <box-icon type='logo' name='instagram' color="white" />

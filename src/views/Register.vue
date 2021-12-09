@@ -24,7 +24,13 @@
   .Register {
     height: auto;
     width: $fullWidth;
-    margin-top: 70px;
+    margin-top: 50px;
     padding: 30px 0 60px 0;
   };
+
+  @media screen and (max-width: 680px) {
+    .Register {
+      margin-top: 20px;
+    };
+  }
 </style>

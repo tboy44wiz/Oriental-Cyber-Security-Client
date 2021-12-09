@@ -53,9 +53,9 @@
    import SectionTitle_Comp from "@/components/layouts/SectionTitle_Comp/SectionTitle_Comp.vue";
 
    //  Import Assets.
-   import BackgroundImage from "@/assets/images/bg_tablet.jpg";
-   import PhaseOneImage from "@/assets/images/phase_1.png";
-   import PhaseTwoImage from "@/assets/images/phase_2.png";
+   import backgroundImage from "@/assets/images/bg_tablet.jpg";
+   import phaseOneImage from "@/assets/images/phase_1.png";
+   import phaseTwoImage from "@/assets/images/phase_2.png";
 
    export default defineComponent({
      name: 'ProgramPhases_Comp',
@@ -68,9 +68,9 @@
        return {
          title: "Program Phases",
          subTitle: "This program is divided into two main phases and these phases are clearly explained as follows:",
-         backgroundImage: BackgroundImage,
-         phaseOneImage: PhaseOneImage,
-         phaseTwoImage: PhaseTwoImage
+         backgroundImage,
+         phaseOneImage,
+         phaseTwoImage
        };
      },
 
@@ -96,11 +96,14 @@
          if(scrollValue >= 0 && screenInnerWidth >= 992) {
            overlay.style.transform = `translateY(${(scrollValue - 900) * 0.3}px)`;
          }
-         else if(scrollValue >= 0 && screenInnerWidth >= 753) {
+         else if(scrollValue >= 0 && screenInnerWidth >= 928) {
            overlay.style.top = `${(scrollValue - (screenInnerHeight * 1.3) + 600) * 0.3}px`;
          }
+         else if(scrollValue >= 0 && screenInnerWidth >= 753) {
+           overlay.style.top = `${(scrollValue - (screenInnerHeight * 1.9) + 600) * 0.3}px`;
+         }
          else {
-           overlay.style.top = `${(scrollValue - (screenInnerHeight * 2.5) + 1350) * 0.3}px`;
+           overlay.style.top = `${(scrollValue - (screenInnerHeight * 2.8) + 600) * 0.3}px`;
          }
        },
      },
