@@ -34,8 +34,8 @@
                 </div>
 
                 <div class="col">
+                  <p><router-link to="/blogs">Blogs</router-link></p>
                   <p><router-link to="#">News</router-link></p>
-                  <p><router-link to="#">Blogs</router-link></p>
                 </div>
               </div>
             </div>
@@ -58,16 +58,16 @@
             <div class="col-5 text-end">
               <div class="social-icon__wrapper">
                 <router-link to="#">
-                  <box-icon type='logo' name='instagram' color="white" />
-                </router-link>
-                <router-link to="#">
-                  <box-icon name='whatsapp' type='logo' color="white" />
+                  <box-icon name='facebook' type='logo' color="white" />
                 </router-link>
                 <router-link to="#">
                   <box-icon name='twitter' type='logo' color="white" />
                 </router-link>
                 <router-link to="#">
-                  <box-icon name='facebook' type='logo' color="white" />
+                  <box-icon type='logo' name='instagram' color="white" />
+                </router-link>
+                <router-link to="#">
+                  <box-icon name='whatsapp' type='logo' color="white" />
                 </router-link>
               </div>
             </div>

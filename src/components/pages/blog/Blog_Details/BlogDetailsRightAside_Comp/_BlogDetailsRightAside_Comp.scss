@@ -1,0 +1,58 @@
+@import "src/assets/styles/GlobalStyle";
+
+
+.BlogDetailsRightAside_Comp {
+    height: min-content;
+    width: $fullWidth;
+
+    .latest-post__wrapper {
+        margin-bottom: 30px;
+        background: #ffffff;
+        border-radius: 5px;
+        padding: 20px;
+
+        h4 {
+            font-size: 1.6rem
+        };
+    
+        .latest-post-list__wrapper {
+            margin-top: 20px;
+    
+            a {
+                margin-bottom: 15px;
+                font-size: 1.1rem;
+                line-height: 1.1;
+                display: block;
+            };
+        };
+    };
+
+    .post-tag__wrapper {
+        margin-bottom: 30px;
+        background: #ffffff;
+        border-radius: 5px;
+        padding: 20px;
+
+        h4 {
+            font-size: 1.6rem
+        };
+
+        .tag-list__wrapper {
+            margin-top: 35px;
+            list-style-type: none;
+            padding: 0;
+      
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+      
+            .tag-list__item {
+              background: $secondaryColor;
+              border: 1px solid #d3d3d3;
+              border-radius: 3px;
+              font-size: 0.9rem;
+              padding: 2px 10px;
+            };
+        };
+    };
+};
