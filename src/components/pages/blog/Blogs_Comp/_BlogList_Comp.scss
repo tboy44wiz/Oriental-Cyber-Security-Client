@@ -1,6 +1,6 @@
 @import "src/assets/styles/GlobalStyle";
 
-.Blogs_Comp {
+.BlogList_Comp {
     width: $fullWidth;
 
     .blog-items__wrapper {
@@ -42,7 +42,6 @@
                 border-radius: 3px;
                 box-sizing: border-box;
                 color: #FFFFFF;
-                cursor: pointer;
                 padding: 6px 15px;
                 transition: all 0.2s ease;
 

@@ -31,7 +31,7 @@ import { defineComponent } from "vue";
     export default defineComponent({
         name: "BlogDetails",
 
-        components: { 
+        components: {
             BlogDetailsLeftAside_Comp,
             BlogDetailsRightAside_Comp,
         },

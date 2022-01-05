@@ -1,5 +1,5 @@
 <template>
-    <div class="Blogs_Comp">
+    <div class="BlogList_Comp">
         <section class="container">
             <SectionTitle_Comp :title="title" :subTitle="subTitle" />
 
@@ -35,7 +35,7 @@
     import Blog2 from '@/assets/images/blog2_image.png';
 
     export default defineComponent({
-        name: 'Blogs_Comp',
+        name: 'BlogList_Comp',
 
         components: {
             SectionTitle_Comp
@@ -84,5 +84,5 @@
 </script>
 
 <style lang="scss" scoped>
-    @import "Blogs_Comp";
+    @import "BlogList_Comp";
 </style>

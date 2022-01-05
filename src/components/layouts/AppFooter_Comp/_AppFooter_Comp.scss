@@ -36,6 +36,16 @@
     .social-icon__wrapper {
       a {
         margin-right: 15px;
+
+        .social-media__icons {
+          height: 20px;
+          width: 20px;
+        };
+
+        &:first-child .social-media__icons {
+          height: 25px;
+          width: 25px;
+        };
       };
     };
   };

@@ -58,16 +58,16 @@
             <div class="col-5 text-end">
               <div class="social-icon__wrapper">
                 <router-link to="#">
-                  <box-icon name='facebook' type='logo' color="white" />
+                  <Icon icon="ei:sc-facebook" class="social-media__icons" />
                 </router-link>
                 <router-link to="#">
-                  <box-icon name='twitter' type='logo' color="white" />
+                  <Icon icon="ci:twitter" class="social-media__icons" />
                 </router-link>
                 <router-link to="#">
-                  <box-icon type='logo' name='instagram' color="white" />
+                  <Icon icon="ci:linkedin" class="social-media__icons" />
                 </router-link>
                 <router-link to="#">
-                  <box-icon name='whatsapp' type='logo' color="white" />
+                  <Icon icon="jam:whatsapp" class="social-media__icons" />
                 </router-link>
               </div>
             </div>
@@ -80,6 +80,7 @@
 <script lang="ts">
   // @ is an alias to /src
   import { defineComponent } from "vue";
+import { Icon } from "@iconify/vue";
 
   export default defineComponent({
     name: 'AppFooter_comp',
@@ -89,6 +90,10 @@
         type: String,
         required: true,
       },
+    },
+
+    components: {
+        Icon
     },
 
     data() {
