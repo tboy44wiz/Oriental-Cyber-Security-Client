@@ -42,3 +42,37 @@
     };
   };
 };
+
+
+
+
+
+
+
+@media screen and (max-width: 575px) {
+  .AppHeader_Comp {
+    .navbar__wrapper {
+      padding: 10px 1% 5px 1%;
+
+      .brand__name {
+        margin: 0;
+        a {
+          font-size: 1.4rem;
+          padding: 8px 0;
+        }
+      }
+    };
+  };
+};
+@media screen and (max-width: 375px) {
+  .AppHeader_Comp {
+    .navbar__wrapper {
+
+      .brand__name {
+        a {
+          font-size: $fontSize;
+        }
+      }
+    };
+  };
+};

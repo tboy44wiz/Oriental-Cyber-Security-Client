@@ -26,3 +26,11 @@
     padding: 50px 0 20px 0;
   };
 }
+
+@media screen and (max-width: 320px) {
+  .SectionTitle_Comp {
+    .section__subTitle {
+      font-size: 1rem;
+    };
+  };
+}

@@ -1,5 +1,5 @@
 <template>
-    <div class="BlogDetailsLeftAside_Comp">
+    <div class="BlogDetails_Comp">
         <h3>Versions of the Lorem ipsum have been used in 1960s</h3>
 
         <ul class="blog-info__items">
@@ -83,7 +83,7 @@
     import SingleBlogImage from "@/assets/images/single_blog_image.png";
 
     export default defineComponent({
-        name: "BlogDetailsLeftAside_Comp",
+        name: "BlogDetails_Comp",
 
         components: {
             Icon

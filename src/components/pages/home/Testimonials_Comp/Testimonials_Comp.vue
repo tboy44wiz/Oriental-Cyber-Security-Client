@@ -65,9 +65,8 @@
             id: 1,
             class: "active",
             name: "Jane Doe",
-            text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto cupiditate dolorum?\n" +
-                "Accusamus accusantium adipisci aliquam animi architecto autem doloribus eos error esse exercitationem\n" +
-                "explicabo id maiores officiis, omnis sunt.",
+            text: "Lorem ipsum dolor sit amet,  adipisicing elit. Animi architecto cupiditate dolorum?\n" +
+                "Accusamus accusantium adipisci aliquam animi architecto autem doloribus eos error esse exercitationem.",
             image: userOne,
             alt: "Customer Image",
           },
@@ -75,9 +74,9 @@
             id: 2,
             class: "non-active",
             name: "Jane Doe",
-            text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto cupiditate dolorum?\n" +
+            text: "Lorem ipsum dolor sit amet,  elit. Animi architecto cupiditate dolorum?\n" +
                 "Accusamus accusantium adipisci aliquam animi architecto autem doloribus eos error esse exercitationem\n" +
-                "explicabo id maiores officiis, omnis sunt.",
+                "explicabo  sunt.",
             image: userTwo,
             alt: "Customer Image",
           },
@@ -85,9 +84,8 @@
             id: 3,
             class: "non-active",
             name: "Jane Doe",
-            text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto cupiditate dolorum?\n" +
-                "Accusamus accusantium adipisci aliquam animi architecto autem doloribus eos error esse exercitationem\n" +
-                "explicabo id maiores officiis, omnis sunt.",
+            text: "Lorem ipsum dolor sit amet,  elit. Animi architecto cupiditate dolorum?\n" +
+                "Accusamus accusantium  doloribus eos error esse exercitationem explicabo id maiores officiis, omnis sunt.",
             image: userThree,
             alt: "Customer Image",
           },
@@ -95,9 +93,8 @@
             id: 4,
             class: "non-active",
             name: "Jane Doe",
-            text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto cupiditate dolorum?\n" +
-                "Accusamus accusantium adipisci aliquam animi architecto autem doloribus eos error esse exercitationem\n" +
-                "explicabo id maiores officiis, omnis sunt.",
+            text: "Lorem ipsum dolor sit amet,  elit. Animi architecto cupiditate dolorum?\n" +
+                "Accusamus  aliquam animi architecto autem doloribus eos error esse exercitationem officiis.",
             image: userFour,
             alt: "Customer Image",
           },

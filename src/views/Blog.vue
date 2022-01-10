@@ -28,9 +28,9 @@
         padding: 30px 0 60px 0;
     };
 
-    @media screen and (max-width: 680px) {
+    @media screen and (max-width: 575px) {
         .Blogs {
-            margin-top: 20px;
+            margin-top: 40px;
         };
     };
 </style>
