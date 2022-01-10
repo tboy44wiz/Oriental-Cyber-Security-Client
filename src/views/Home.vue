@@ -33,7 +33,7 @@
     height: auto;
     width: $fullWidth;
     margin-top: 50px;
-    padding: 30px 0 60px 0;
+    padding-top: 30px;
   };
 
   @media screen and (max-width: 680px) {

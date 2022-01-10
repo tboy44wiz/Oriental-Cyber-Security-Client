@@ -1,27 +1,26 @@
 <template>
-  <div class="Register">
-    <RegistrationForm_Comp />
+  <div class="Gallery">
+    <Gallery_Comp />
   </div>
 </template>
 
 <script lang="ts">
-  import { defineComponent } from 'vue';
-  import RegistrationForm_Comp from "@/components/pages/register/RegistrationForm_Comp/RegistrationForm_Comp.vue";
+  import { defineComponent } from "vue";
+  import Gallery_Comp from "@/components/pages/gallery/Gallery_Comp/Gallery_Comp.vue";
 
   export default defineComponent({
-    name: 'Register' as string,
+    name: "Gallery" as string,
 
     components: {
-      RegistrationForm_Comp,
+      Gallery_Comp
     },
+
   });
 </script>
 
-
 <style lang="scss" scoped>
   @import "src/assets/styles/GlobalStyle";
-
-  .Register {
+  .Gallery {
     height: auto;
     width: $fullWidth;
     margin-top: 50px;
@@ -29,8 +28,8 @@
   };
 
   @media screen and (max-width: 680px) {
-    .Register {
+    .Gallery {
       margin-top: 20px;
     };
-  };
+  }
 </style>

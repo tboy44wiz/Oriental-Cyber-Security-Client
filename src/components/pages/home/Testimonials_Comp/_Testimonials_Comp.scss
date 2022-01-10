@@ -1,6 +1,63 @@
 @import "src/assets/styles/GlobalStyle";
 
 .Testimonials_Comp {
-  background: linear-gradient(135deg, rgba(0, 176, 176, 0.1), rgba(1, 87, 87, 0.2));
-  padding: 20px 0;
+  height: auto;
+  width: $fullWidth;
+  background: linear-gradient(135deg, rgba(208, 250, 250, 0.18), rgba(208, 250, 250, 0.18));
+  padding: 20px 0 40px 0;
+
+  .customer-testimonial__wrapper {
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+
+    .customer-details__wrapper {
+      width: 80%;
+      box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+      padding: 40px;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+
+      &::before {
+        height: 180px;
+        width: 180px;
+        content: "";
+        background: rgba(0, 97, 97, 0.38);
+        border-radius: 50%;
+        display: block;
+
+        position: absolute;
+        inset: -80px;
+      };
+
+      .image-name__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        position: absolute;
+
+        .customer__image {
+          height: 60px;
+        };
+
+        .customer__name {
+          margin: 0;
+          color: $primaryColor;
+          font-family: 'Yanone Kaffeesatz', sans-serif;
+          font-size: 1.2rem;
+          font-weight: 600;
+        };
+      };
+
+      .customer__comment {
+        margin-top: 80px;
+        font-size: 1.2rem;
+        text-align: left;
+      };
+    };
+  };
 };

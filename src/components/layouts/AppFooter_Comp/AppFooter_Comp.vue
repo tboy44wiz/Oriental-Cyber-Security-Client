@@ -29,12 +29,13 @@
               <div class="row">
                 <div class="col">
                   <p><router-link to="/">Home</router-link></p>
+                  <p><router-link to="/gallery">Gallery</router-link></p>
+                  <p><router-link to="/blogs">Blogs</router-link></p>
                   <p><router-link to="/register">Register</router-link></p>
-                  <p><a :href="foreTrustLink" target="_blank">Visit ForeTrust Today</a></p>
                 </div>
 
                 <div class="col">
-                  <p><router-link to="/blogs">Blogs</router-link></p>
+                  <p><a :href="foreTrustLink" target="_blank">Visit ForeTrust Today</a></p>
                   <p><router-link to="#">News</router-link></p>
                 </div>
               </div>

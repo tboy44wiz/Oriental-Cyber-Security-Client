@@ -27,10 +27,10 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "@vue/runtime-core";
+    import { defineComponent } from "@vue/runtime-core";
 
     export default defineComponent({
-        name: "Modal_Comp",
+        name: "Modal_Comp" as string,
 
         props: {
             modalTitle: String,
