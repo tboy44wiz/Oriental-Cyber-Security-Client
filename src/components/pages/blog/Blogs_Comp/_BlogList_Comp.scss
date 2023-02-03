@@ -4,6 +4,7 @@
     width: $fullWidth;
 
     .blog-items__wrapper {
+        //margin-top: -30px;
 
         .blog__item {
             height: $fullHeight;
@@ -54,3 +55,18 @@
         };
     };
 };
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .BlogList_Comp {
+
+        .blog-items__wrapper {
+            margin-top: -30px;
+        };
+    };
+}

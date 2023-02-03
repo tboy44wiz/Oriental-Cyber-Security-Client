@@ -17,13 +17,13 @@
             </li>
             <li class="blog-info__item">
               <router-link to="#">
-                <Icon icon="fluent:thumb-like-20-regular" width="23" class="blog-info__icons" />
+                <Icon icon="fluent:thumb-like-20-regular" width="18" class="blog-info__icons" />
                 <p>108</p>
               </router-link>
             </li>
             <li class="blog-info__item">
               <router-link to="#">
-                <Icon icon="akar-icons:comment" width="20" class="blog-info__icons" />
+                <Icon icon="akar-icons:comment" width="16" class="blog-info__icons" />
                 <p>13</p>
               </router-link>
             </li>

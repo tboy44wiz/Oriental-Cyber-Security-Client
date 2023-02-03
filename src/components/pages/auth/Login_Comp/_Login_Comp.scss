@@ -1,14 +1,15 @@
 @import "src/assets/styles/GlobalStyle";
 
-.RegistrationForm_Comp {
-  //padding: 0 80px;
+.Login_Comp {
+  height: auto;
+  width: 550px;
 
-  .registration__form {
+  .admin-login__form {
     box-shadow:  0 8px 24px 0 rgba(149, 157, 165, 0.2);
-    padding: 50px 20px;
+    padding: 40px 20px;
 
     display: grid;
-    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+    grid-template-columns: 1fr;
     grid-gap: 20px;
 
     .input__box {
@@ -25,22 +26,17 @@
       };
     };
 
-    .select__box {
-      height: auto;
-      width: 100%;
-      background: $tertiaryColor;
-      border: none;
-      cursor: pointer;
-      line-height: 40px;
-      outline: none;
-      padding: 5px 10px;
+    p {
+      a {
+        color: gray;
 
-      .first__option {
-        color: red;
+        &:hover {
+          color: $linkColorHover;
+        };
       };
     };
 
-    .register__button {
+    .admin-login__button {
       height: auto;
       width: $fullWidth;
       margin-top: 20px;
@@ -60,23 +56,17 @@
       };
     };
 
-    .full-name__input, .institution__input, .register__button {
-      grid-column: 1 / -1;
-    };
-  };
-};
+    .dont-have--account {
+      text-align: center;
 
+      span {
+        color: gray;
+        cursor: pointer;
 
-
-
-/*==== Media Query ====*/
-@media screen and (max-width: 680px) {
-  .RegistrationForm_Comp {
-    .registration__form {
-
-      .phone-number__input, .email__input, .state__input, .select__box, .course__input, .level__input {
-        grid-column: 1 / -1;
+        &:hover {
+          color: $linkColorHover;
+        };
       };
     };
   };
-}
+};

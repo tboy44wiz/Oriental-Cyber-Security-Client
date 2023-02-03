@@ -1,6 +1,6 @@
 <template>
     <div class="BlogDetails">
-        <div class="container p-0">
+        <div class="container">
             <div class="row">
                 <div class="col-12">
 
@@ -16,7 +16,6 @@
                             <BlogDetailsRightAside_Comp />
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>

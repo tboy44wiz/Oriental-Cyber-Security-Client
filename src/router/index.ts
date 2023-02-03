@@ -4,6 +4,7 @@ import Blog from '@/views/Blog.vue';
 import BlogDetails from '@/views/BlogDetails.vue';
 import Gallery from "@/views/Gallery.vue";
 import Register from "@/views/Register.vue";
+import Auth from "@/views/Auth.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -30,6 +31,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/register',
     name: 'Register',
     component: Register
+  },
+  {
+    path: '/admin/:url',
+    name: 'Auth',
+    component: Auth
   }
 ]
 

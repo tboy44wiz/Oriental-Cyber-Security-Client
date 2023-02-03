@@ -1,11 +1,11 @@
 @import "src/assets/styles/GlobalStyle";
 
 .AppFooter_Comp {
-  //background: #3f3f3f;
   background: $primaryColor;
+  box-sizing: border-box;
   color: $secondaryColor;
   font-size: 1.1rem;
-  padding: 40px 0 0 0;
+  padding: 0;
 
   .brand__name {
     font-family: 'Jost', sans-serif;
@@ -50,3 +50,20 @@
     };
   };
 }
+
+
+
+
+
+
+@media screen and (max-width: 575px){
+  .AppFooter_Comp {
+    font-size: 1rem;
+    padding:  0;
+
+    .brand__name {
+      font-family: 'Jost', sans-serif;
+      font-size: $subHeading;
+    }
+  };
+};

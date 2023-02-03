@@ -7,11 +7,11 @@
                 <div 
                     v-for="blog in blogs"
                     :key="blog.id"
-                    class="col-12 col-md-6 col-lg-4 mt-1 mt-lg-0 mb-lg-4"
+                    class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0 mb-lg-4"
                 >
                     <div class="blog__item">
                         <img :src="blog.image" :alt="'Blog' + blog.id + 'image'"  />
-                        <div className="title-and-subTitle__Wrapper">
+                        <div class="title-and-subTitle__Wrapper">
                             <strong>{{ blog.title }}</strong>
                             <p>{{ blog.subTitle }}</p>
                         </div>
